@@ -1,0 +1,2875 @@
+<style type="text/css" media="all">
+  @page {
+    margin: 5mm 2mm 5mm 2mm;
+    @top-center {
+      content: element(header);
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    @bottom-right {
+      content:"FORMA 3-039";
+      width: 500px;
+      font-size: 10px;
+      white-space: pre-wrap;
+      font-weight: 700;
+      margin-right: 15px;
+    }
+  }
+
+  *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+  .td-class {
+    border-left: none;
+    text-align: justify;
+    padding-left: 1%;
+    padding-right: 1%;
+  
+  }
+
+ .img {
+    width: 150px;
+    margin-top: -2%;
+    margin-bottom: -2%;
+    float: right;
+  }
+
+  table {
+    width: 99.9%;
+    border: 0.3px solid #000;
+    border-spacing: 0;
+    font-size: 11px;
+    color: #000;
+    margin: 0;
+  }
+  th,
+  td {
+
+    border: 0.3px solid #000;
+        padding-top: 2px;
+        padding-bottom: 5px;
+        font-size: 10px;
+    border: 0.3px solid #000;
+  }
+
+  .avoid-break .row .right img {
+            height: 60px !important;
+            width: 150px !important;
+            margin-bottom: 1px !important;
+            padding-bottom: 1px !important;
+        }
+        .avoid-break {
+            height: 100px !important;
+        }
+		
+        .half-colspan {
+    width: 70%;
+}
+
+
+
+  #idVentilacionCumple,
+  #idVentilacionNoCumple,
+  #idVentilacionNA {
+    display: none;
+  }
+  #idIluminacionCumple,
+  #idIluminacionNoCumple,
+  #idIluminacionNA {
+    display: none;
+  }
+  #idEstanteriasCumple,
+  #idEstanteriasNoCumple,
+  #idEstanteriasNA {
+    display: none;
+  }
+  #idBarreraFisicaCumple,
+  #idBarreraFisicaNoCumple,
+  #idBarreraFisicaNA {
+    display: none;
+  }
+  #idEstivasCumple,
+  #idEstivasNoCumple,
+  #idEstivasNA {
+    display: none;
+  }
+  #idOrdenBultosCumple,
+  #idOrdenBultosNoCumple,
+  #idOrdenBultosNA {
+    display: none;
+  }
+  #idPisosParedesCumple,
+  #idPisosParedesNoCumple,
+  #idPisosParedesNA {
+    display: none;
+  }
+  #idProductoSolidosCumple,
+  #idProductoSolidosNoCumple,
+  #idProductoSolidosNA {
+    display: none;
+  }
+  #idProductoSolidosCumple,
+  #idProductoSolidosNoCumple,
+  #idProductoSolidosNA {
+    display: none;
+  }
+  #idSeccionCategoriaCumple,
+  #idSeccionCategoriaNoCumple,
+  #idSeccionCategoriaNA {
+    display: none;
+  }
+  #idAreaDevolucionesCumple,
+  #idAreaDevolucionesNoCumple,
+  #idAreaDevolucionesNA {
+    display: none;
+  }
+  #idAcopioPlaguicidasCumple,
+  #idAcopioPlaguicidasNoCumple,
+  #idAcopioPlaguicidasNA {
+    display: none;
+  }
+  #idDiquesContencionCumple,
+  #idDiquesContencionNoCumple,
+  #idDiquesContencionNA {
+    display: none;
+  }
+  #idDiquesSeñalizacionCumple,
+  #idDiquesSeñalizacionNoCumple,
+  #idDiquesSeñalizacionNA {
+    display: none;
+  }
+  #idRegistroIcaCumple,
+  #idRegistroIcaNoCumple,
+  #idRegistroIcaNA {
+    display: none;
+  }
+  #idEtiquetasRotuladosCumple,
+  #idEtiquetasRotuladosNoCumple,
+  #idEtiquetasRotuladosNA {
+    display: none;
+  }
+  #idFechaVigenteCumple,
+  #idFechaVigenteNoCumple,
+  #idFechaVigenteNA {
+    display: none;
+  }
+  #idMedidorHumedadCumple,
+  #idMedidorHumedadNoCumple,
+  #idMedidorHumedadNA {
+    display: none;
+  }
+  #idRegistroPrescripcionesCumple,
+  #idRegistroPrescripcionesNoCumple,
+  #idRegistroPrescripcionesNA {
+    display: none;
+  }
+  #idSeparacionToxicologicaCumple,
+  #idSeparacionToxicologicaNoCumple,
+  #idSeparacionToxicologicaNA {
+    display: none;
+  }
+  #idDobleRecipienteCumple,
+  #idDobleRecipienteNoCumple,
+  #idDobleRecipienteNA {
+    display: none;
+  }
+  #idSeñalizacionAreaInsumosCumple,
+  #idSeñalizacionAreaInsumosNoCumple,
+  #idSeñalizacionAreaInsumosNA {
+    display: none;
+  }
+  #idMedicamentosRestringidoCumple,
+  #idMedicamentosRestringidoNoCumple,
+  #idMedicamentosRestringidoNA {
+    display: none;
+  }
+  #idInscripcionUAECumple,
+  #idInscripcionUAENoCumple,
+  #idInscripcionUAENA {
+    display: none;
+  }
+  #idFormatosConcejoCumple,
+  #idFormatosConcejoNoCumple,
+  #idFormatosConcejoNA {
+    display: none;
+  }
+  #idControlMedicamentosCumple,
+  #idControlMedicamentosNoCumple,
+  #idControlMedicamentosNA {
+    display: none;
+  }
+  #idCuartoFrioCumple,
+  #idCuartoFrioNoCumple,
+  #idCuartoFrioNA {
+    display: none;
+  }
+  #idPlantaElectricaCumple,
+  #idPlantaElectricaNoCumple,
+  #idPlantaElectricaNA {
+    display: none;
+  }
+  #idRegistrosTemperaturaCumple,
+  #idRegistrosTemperaturaNoCumple,
+  #idRegistrosTemperaturaNA {
+    display: none;
+  }
+  #idInstrumentosMedicionCumple,
+  #idInstrumentosMedicionNoCumple,
+  #idInstrumentosMedicionNA {
+    display: none;
+  }
+  #idRefrigerantesSuministrosCumple,
+  #idRefrigerantesSuministrosNoCumple,
+  #idRefrigerantesSuministrosNA {
+    display: none;
+  }
+  #idProcedimientoEscritoCumple,
+  #idProcedimientoEscritoNoCumple,
+  #idProcedimientoEscritoNA {
+    display: none;
+  }
+  #idAutorizacionVentaAlimentosCumple,
+  #idAutorizacionVentaAlimentosNoCumple,
+  #idAutorizacionVentaAlimentosNA {
+    display: none;
+  }
+  #idRegistroProductosCumple,
+  #idRegistroProductosNoCumple,
+  #idRegistroProductosNA {
+    display: none;
+  }
+  #idRequisitosMicrobilogicosCumple,
+  #idRequisitosMicrobilogicosNoCumple,
+  #idRequisitosMicrobilogicosNA {
+    display: none;
+  }
+  #idCapatcitacionAlimentosCumple,
+  #idCapatcitacionAlimentosNoCumple,
+  #idCapatcitacionAlimentosNA {
+    display: none;
+  }
+  #idAlimentosMezcladosCumple,
+  #idAlimentosMezcladosNoCumple,
+  #idAlimentosMezcladosNA {
+    display: none;
+  }
+  #idRecipientesRotuladosCumple,
+  #idRecipientesRotuladosNoCumple,
+  #idRecipientesRotuladosNA {
+    display: none;
+  }
+  #idRecipientesFacilLimpiezaCumple,
+  #idRecipientesFacilLimpiezaNoCumple,
+  #idRecipientesFacilLimpiezaNA {
+    display: none;
+  }
+  #idBolsasNuevasCumple,
+  #idBolsasNuevasNoCumple,
+  #idBolsasNuevasNA {
+    display: none;
+  }
+  #idDispensadorAlimentoCumple,
+  #idDispensadorAlimentoNoCumple,
+  #idDispensadorAlimentoNA {
+    display: none;
+  }
+  #idTermosSemenCumple,
+  #idTermosSemenNoCumple,
+  #idTermosSemenNA {
+    display: none;
+  }
+  #idEquiposProteccionCumple,
+  #idEquiposProteccionNoCumple,
+  #idEquiposProteccionNA {
+    display: none;
+  }
+  #idRegistrosNivelNitrogenoCumple,
+  #idRegistrosNivelNitrogenoNOCumple,
+  #idRegistrosNivelNitrogenoNA {
+    display: none;
+  }
+  #idSemenVentilacionCumple,
+  #idSemenVentilacionNoCumple,
+  #idSemenVentilacionNA {
+    display: none;
+  }
+  #idRegistroVacunacionCumple,
+  #idRegistroVacunacionNoCumple,
+  #idRegistroVacunacionNA {
+    display: none;
+  }
+  #idUnaEspecieAvesCumple,
+  #idUnaEspecieAvesNoCumple,
+  #idUnaEspecieAvesNA {
+    display: none;
+  }
+  #idAvesAreaIndependienteCumple,
+  #idAvesAreaIndependienteNoCumple,
+  #idAvesAreaIndependienteNA {
+    display: none;
+  }
+  #idAvesProvienenIncubadorasCumple,
+  #idAvesProvienenIncubadorasNoCumple,
+  #idAvesProvienenIncubadorasNA {
+    display: none;
+  }
+  #idSuministroAguaAlimentoCumple,
+  #idSuministroAguaAlimentoNoCumple,
+  #idSuministroAguaAlimentoNA {
+    display: none;
+  }
+  #idMaximo15DiasCumple,
+  #idMaximo15DiasNoCumple,
+  #idMaximo15DiasNA {
+    display: none;
+  }
+  #idProtocoloDesinfeccionCumple,
+  #idProtocoloDesinfeccionNoCumple,
+  #idProtocoloDesinfeccionNA{
+    display: none;
+  }
+  #idRegistroInventariosCumple,
+  #idRegistroInventariosNoCumple,
+  #idRegistroInventariosNA{
+    display: none;
+  }
+  #idRegistroCapacitacionCumple,
+  #idRegistroCapacitacionNoCumple,
+  #idRegistroCapacitacionNA{
+    display: none;
+  }
+  #idControlInventarioCumple,
+  #idControlInventarioNoCumple,
+  #idControlInventarioNA{
+    display: none;
+  }
+  #idProcedimientosAlmacenamientoCumple,
+  #idProcedimientosAlmacenamientoNoCumple,
+  #idProcedimientosAlmacenamientoNA{
+    display: none;
+  }
+  #idProcedimientosDevolucionesCumple,
+  #idProcedimientosDevolucionesNoCumple,
+  #idProcedimientosDevolucionesNA{
+    display: none;
+  }
+  #idProtocoloRecoleccionCumple,
+  #idProtocoloRecoleccionNoCumple,
+  #idProtocoloRecoleccionNA{
+    display: none;
+  }
+  #idFichasTEcnicasSeguridadCumple,
+  #idFichasTEcnicasSeguridadNoCumple,
+  #idFichasTEcnicasSeguridadNA{
+    display: none;
+  }
+  #idNormasBioseguridadCumple,
+  #idNormasBioseguridadNoCumple,
+  #idNormasBioseguridadNA{
+    display: none;
+  }
+  #idInsumosPecuariosCumple,
+  #idInsumosPecuariosNoCumple,
+  #idInsumosPecuariosNA{
+    display: none;
+  }
+  #idControlPlagasCumple,
+  #idControlPlagasNoCumple,
+  #idControlPlagasNA{
+    display: none;
+  }
+  #idEventosAdversosCumple,
+  #idEventosAdversosNoCumple,
+  #idEventosAdversosNA{
+    display: none;
+  }
+
+
+
+
+  #<span class="h-card" style="color:blue">[[qID7870-95332]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7870-95334]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7870-95336]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7870-95338]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7870-95340]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7870-95342]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7870-95344]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7870-95346]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7870-95348]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7870-95350]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7870-95352]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7870-95354]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7870-95356]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7871-95358]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7871-95360]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7871-95362]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7871-95364]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7871-95366]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7872-95368]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7872-95370]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7873-95372]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7873-95374]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7873-95376]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7873-95378]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7873-95380]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7874-95382]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7874-95384]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7874-95386]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7874-95388]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7874-95390]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7874-95392]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7875-95394]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7875-95396]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7875-95398]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7875-95400]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7875-95402]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7875-95404]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7875-95406]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7875-95408]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7875-95410]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7876-95412]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7876-95414]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7876-95416]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7876-95418]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7877-95420]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7877-95422]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7877-95424]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7877-95426]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7877-95428]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7877-95430]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7877-95432]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7878-95434]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7878-95436]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7878-95438]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7878-95440]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7878-95442]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7878-95444]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7878-95446]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7878-95448]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7878-95450]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7878-95452]]</span> {
+    display: block;
+  }
+  #<span class="h-card" style="color:blue">[[qID7878-95454]]</span> {
+    display: block;
+  }
+
+</style>
+
+<img src="https://insumos-bot-asistencia-tecnica.s3.us-west-2.amazonaws.com/ICA/LOGO+ICA+FULL+COLOR+SIN+FONDO.png"
+  class="img"/>
+
+<table style="border-bottom: none;">
+  <tr>
+    <td rowspan="5" style="width: 60%">
+      <h2>
+        <center>
+          ACTA DE VISITA A ESTABLECIMIENTOS DE COMERCIO DE INSUMOS PECUARIOS
+        </center>
+      </h2>
+    </td>
+    <td colspan="3" style="width: 40%; background-color: #7f7f7f">
+      <center><b>CÓDIGO DEL ACTA</b></center>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      <center><span class="h-card" style="color:blue">[[qID7865-95325]]</span></center>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" style="background-color: #7f7f7f">
+      <center><b>FECHA</b></center>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 7%"><center>Día</center></td>
+    <td style="width: 7%"><center>Mes</center></td>
+    <td style="width: 7%"><center>Año</center></td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      <center><span class="h-card" style="color:blue">[[date]]</span></center>
+    </td>
+  
+  </tr>
+</table>
+<tr></tr>
+<table style="border-bottom: none; border-top: none">
+  <tr>
+    <td colspan="6" style="background-color: #7f7f7f">
+      <center><strong>1. CATEGORÍA DEL REGISTRO</strong></center>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>1.1.</b></td>
+    <td style="border-left: none">
+      <center>
+        Comercializador de insumos agropecuarios y/o semillas para siembra
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+    <td style="border-right: none; vertical-align: top"><b>1.2.</b></td>
+    <td style="border-left: none">
+      <center>
+        Comercializador electrónico de insumos agropecuarios y/o semillas para
+        siembra
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td colspan="3" style="background-color: #7f7f7f">
+      <center>
+        <strong>2. CÓDIGO DE REGISTRO DEL ESTABLECIMIENTO</strong>
+      </center>
+    </td>
+    <td colspan="3">
+      <center><span class="h-card" style="color:blue">[[qID7867-95328]]</span></center>
+    </td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td colspan="6" style="background-color: #7f7f7f">
+      <center><strong>3. INFORMACIÓN DEL ESTABLECIMIENTO</strong></center>
+    </td>
+  </tr>
+</table>
+<table style="border-top: none; border-bottom: none">
+  <tr>
+    <td style="vertical-align: top">
+      <center>
+        <b>3.1.</b>Nombre o Razón Social del establecimiento
+        <br />
+        <br />
+        <center><span class="h-card" style="color:blue">[[entityName]]</span></center>
+      </center>
+    </td>
+    <td style="vertical-align: top">
+      <center>
+        <b>3.2.</b>Nombre o Razón Social del propietario o representante legal.
+        <br />
+        <br />
+        <center><span class="h-card" style="color:blue">[[producerFullName]]</span></center>
+      </center>
+    </td>
+    <td style="vertical-align: top">
+      <center>
+        <b>3.3.</b> NIT o documento de identificación de la empresa o
+        establecimiento
+        <br />
+        <br />
+        <center><span class="h-card" style="color:blue">[[producerIdentification]]</span></center>
+      </center>
+    </td>
+  </tr>
+</table>
+<table style="border-top: none; border-bottom: none">
+  <tr>
+    <td style="width: 16%">
+      <center>
+        <b>3.4.</b> Departamento <br /><br />
+        <center><span class="h-card" style="color:blue">[[qID97636]]</span></center>
+      </center>
+    </td>
+    <td>
+      <center>
+        <b>3.5.</b> Ciudad/Municipio <br /><br />
+        <center><span class="h-card" style="color:blue">[[qID7885-95631]]</span></center>
+      </center>
+    </td>
+    <td>
+      <center>
+        <b>3.6.</b> Dirección del establecimiento <br /><br />
+        <center><span class="h-card" style="color:blue">[[qID97639]]</span></center>
+      </center>
+    </td>
+    <td>
+      <center>
+        <b>3.7.</b> Teléfono de contacto <br /><br />
+        <center><span class="h-card" style="color:blue">[[producerPhone]]</span></center>
+      </center>
+    </td>
+    <td>
+      <center>
+        <b>3.8.</b> Correo electrónico de contacto <br /><br />
+        <center><span class="h-card" style="color:blue">[[producerEmail]]</span></center>
+      </center>
+    </td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td style="border-bottom: none; padding-left: 1%">
+      <b>3.9.</b> Dirección(es) de la(s) bodega(s) de almacenamiento:
+    </td>
+  </tr>
+  <tr>
+    <td style="border-top: none; border-bottom: none; padding-left: 3%">
+      <b>3.9.1.</b>
+      <span class="h-card" style="color:blue">[[qID97650]]</span>
+      <p></p>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-top: none; border-bottom: none; padding-left: 3%">
+      <b>3.9.2.</b>
+      <span class="h-card" style="color:blue">[[qID97651]]</span>
+      <p></p>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-top: none; border-bottom: none; padding-left: 3%">
+      <b>3.9.3.</b>
+      <span class="h-card" style="color:blue">[[qID97652]]</span>
+      <p></p>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-top: none; border-bottom: none; padding-left: 3%">
+      <b>3.9.4.</b>
+      <span class="h-card" style="color:blue">[[qID97653]]</span>
+    </td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td style="padding-left: 1%"> <b>3.10.</b>Dirección del centro de acopio (si aplica):
+      <p></p>
+   <b style="padding-left: 15px;">3.10.1</b>
+      <span class="h-card" style="color:blue">[[qID97639]]</span>
+      </td>
+  </tr>
+  <tr>
+    <td style="padding-left: 1%"><b>3.11.</b>Dirección del sitio web o plataforma (si aplica): &nbsp; <span class="h-card" style="color:blue">[[qID97649]]</span></td>
+  </tr>
+  </table>
+<table style="border-bottom: none; border-top: none">
+  <tr>
+    <td colspan="6" style="background-color: #7f7f7f">
+      <center><strong>4. MOTIVO DE LA VISITA</strong></center>
+    </td>
+  </tr>
+  <tr>
+    <td><b>4.1.</b> Primera visita o IVC</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+    <td><b>4.2.</b> Toma de muestras</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+    <td><b>4.3.</b> Visita punto de distribución de biológicos</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td><b>4.4.</b> Búsqueda y sellado</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+    <td><b>4.5.</b> Levantamiento de sellos y/o disposición final</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+    <td><b>4.6.</b> Otra, ¿cuál?</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+  </tr>
+</table>
+<tr></tr>
+<table style="border-bottom: none; border-top: none">
+  <tr>
+    <td colspan="9" style="background-color: #7f7f7f">
+      <center><strong>5. INSUMOS PECUARIOS COMERCIALIZADOS</strong></center>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none"><b>5.1.</b></td>
+    <td style="border-left: none">Medicamentos</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+    <td style="border-right: none"><b>5.2.</b></td>
+    <td style="border-left: none">Biológicos Veterinarios</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+    <td style="border-right: none"><b>5.3.</b></td>
+    <td style="border-left: none">Cosméticos</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none"><b>5.4.</b></td>
+    <td style="border-left: none">Medicamentos de Control Especial</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+    <td style="border-right: none"><b>5.5.</b></td>
+    <td style="border-left: none">Alimentos para Animales</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+    <td style="border-right: none"><b>5.6.</b></td>
+    <td style="border-left: none">
+      Aves Comerciales (Ponedora y Pollo de Engorde)
+    </td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none"><b>5.7.</b></td>
+    <td style="border-left: none">Sales Mineralizadas</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+    <td style="border-right: none"><b>5.8.</b></td>
+    <td style="border-left: none">Plaguicidas Pecuarios</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+    <td style="border-right: none"><b>5.9.</b></td>
+    <td style="border-left: none">Semen y Embriones</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+  </tr>
+</table>
+<tr></tr>
+<table style="border-bottom: none; border-top: none">
+  <tr>
+    <td colspan="6" style="background-color: #7f7f7f">
+      <center><strong>6. CRITERIOS Y PARÁMETROS DE EVALUACIÓN</strong></center>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" style="background-color: #bfbfbf">
+      <center><strong>6.1. INSTALACIONES</strong></center>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="width: 57%">
+      <center><b>Parámetro</b></center>
+    </td>
+    <td style="width: 8%">
+      <center><b>Cumple</b></center>
+    </td>
+    <td style="width: 11%">
+      <center><b>No cumple</b></center>
+    </td>
+    <td style:"9%">
+      <center><b>N/A</b></center>
+    </td>
+    <td>
+      <center><b>Observaciones</b></center>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.1.1. </b></td>
+    <td class="td-class">
+      Cuenta con ventilación para almacenar los productos de acuerdo con lo
+      establecido en la normatividad vigente y el rotulado.
+    </td>
+    <td>
+      <center>
+        <span id="idVentilacionCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idVentilacionNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idVentilacionNA">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span class="h-card" style="color:blue">[[qID7870-95333]]</span>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.1.2. </b></td>
+    <td class="td-class">
+      Cuenta con Iluminación para almacenar los productos de acuerdo con lo
+      establecido en la normatividad vigente y el rotulado.
+    </td>
+    <td>
+      <center>
+        <span id="idVentilacionCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idVentilacionNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idVentilacionNA">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span class="h-card" style="color:blue">[[qID7870-95335]]</span>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.1.3. </b></td>
+    <td class="td-class">
+      Los insumos pecuarios se encuentran exhibidos dentro de estanterías de
+      fácil limpieza.
+    </td>
+    <td>
+      <center>
+        <span id="idEstanteriasCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idEstanteriasNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idEstanteriasNA">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span class="h-card" style="color:blue">[[qID7870-95337]]</span>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.1.4. </b></td>
+    <td class="td-class">
+      Los insumos pecuarios se encuentran separados de los insumos agrícolas,
+      sea mediante barrera física o de posición en los estantes y conforme a las
+      recomendaciones del fabricante.
+    </td>
+    <td>
+      <center>
+        <span id="idBarreraFisicaCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idBarreraFisicaNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idBarreraFisicaNA">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span class="h-card" style="color:blue">[[qID7870-95339]]</span>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.1.5. </b></td>
+    <td class="td-class">
+      Los insumos se encuentran almacenados ordenadamente sobre estibas y
+      plataformas o tarimas en buen estado.
+    </td>
+    <td>
+      <center>
+        <span id="idEstivasCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idEstivasNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idEstivasNA">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span class="h-card" style="color:blue">[[qID7870-95341]]</span>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.1.6. </b></td>
+    <td class="td-class">
+      Cada pila de bultos de alimento se encuentra ordenado por tipo de producto
+      y según la especie en la que está indicado.
+    </td>
+    <td>
+      <center>
+        <span id="idOrdenBultosCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idOrdenBultosNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idOrdenBultosNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7870-95343]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.1.7. </b></td>
+    <td class="td-class">
+      Cuenta con pisos y paredes en buen estado que permitan su fácil limpieza y
+      desinfección.
+    </td>
+    <td>
+      <center>
+        <span id="idPisosParedesCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idPisosParedesNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idPisosParedesNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7870-95345]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.1.8. </b></td>
+    <td class="td-class">
+      Los productos solidos de pequeña cantidad se encuentran ubicados en la
+      parte superior de los estantes o vitrinas y los líquidos en la parte
+      inferior.
+    </td>
+    <td>
+      <center>
+        <span id="idProductoSolidosCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idProductoSolidosNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idProductoSolidosNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7870-95347]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.1.9. </b></td>
+    <td class="td-class">
+      Cuenta con secciones identificadas de acuerdo con la categoría de los
+      productos que se comercialicen.
+    </td>
+    <td>
+      <center>
+        <span id="idSeccionCategoriaCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idSeccionCategoriaNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idSeccionCategoriaNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7870-95349]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.1.10. </b></td>
+    <td class="td-class">
+      Cuenta con un área de devoluciones (productos no conformes y/o sellados)
+      debidamente identificada.
+    </td>
+    <td>
+      <center>
+        <span id="idAreaDevolucionesCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idAreaDevolucionesNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idAreaDevolucionesNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7870-95351]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.1.11. </b></td>
+    <td class="td-class">
+      Cuenta con centros de acopio de plaguicidas desechados o descartados y se
+      encuentran en un área exclusiva, cubierta, sin drenajes y con sistemas de
+      ventilación natural o artificial que eviten la acumulación de vapores.
+    </td>
+    <td>
+      <center>
+        <span id="idAcopioPlaguicidasCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idAcopioPlaguicidasNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idAcopioPlaguicidasNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7870-95353]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.1.12. </b></td>
+    <td class="td-class">
+      Los centros de acopio de plaguicidas desechados o descartados cuentan con
+      diques o pisos de contención y disponen de elementos absorbentes o poseen
+      cámara de contención.
+    </td>
+    <td>
+      <center>
+        <span id="idDiquesContencionCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idDiquesContencionNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idDiquesContencionNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7870-95355]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.1.13. </b></td>
+    <td class="td-class">
+      Los centros de acopio cuentan con señalización de seguridad, conforme a la
+      normatividad vigente, indicando advertencia y prohibiciones.
+    </td>
+    <td>
+      <center>
+        <span id="idDiquesSeñalizacionCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idDiquesContencionNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idDiquesSeñalizacionNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7870-95357]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" style="background-color: #bfbfbf">
+      <center><strong>6.2. INSUMOS PECUARIOS</strong></center>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <center><b>Parámetro</b></center>
+    </td>
+    <td style="width: 8%">
+      <center><b>Cumple</b></center>
+    </td>
+    <td style="width: 11%">
+      <center><b>No cumple</b></center>
+    </td>
+    <td>
+      <center><b>N/A</b></center>
+    </td>
+    <td>
+      <center><b>Observaciones</b></center>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.2.1. </b></td>
+    <td class="td-class">Los insumos pecuarios cuentan con registro ICA.</td>
+    <td>
+      <center>
+        <span id="idRegistroIcaCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRegistroIcaNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRegistroIcaNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7871-95359]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.2.2. </b></td>
+    <td class="td-class">
+      Las etiquetas y rotulados de los productos se encuentran en perfecto
+      estado.
+    </td>
+    <td>
+      <center>
+        <span id="idEtiquetasRotuladosCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idEtiquetasRotuladosNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idEtiquetasRotuladosNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7871-95361]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.2.3. </b></td>
+    <td class="td-class">
+      Comercializa productos con fechas de expiración vigente, no se encuentran
+      alterados, ni adulterados, ni son fraudulentos.
+    </td>
+    <td>
+      <center>
+        <span id="idFechaVigenteCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idFechaVigenteNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idFechaVigenteNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7871-95363]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.2.4. </b></td>
+    <td class="td-class">
+      Cuenta con instrumentos medidores de humedad relativa y temperatura, así
+      como registros diarios de esta.
+    </td>
+    <td>
+      <center>
+        <span id="idMedidorHumedadCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idMedidorHumedadNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idMedidorHumedadNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7871-95365]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.2.5. </b></td>
+    <td class="td-class">
+      Cuenta con registro y archivo de las prescripciones de los últimos seis
+      (6) meses de los insumos pecuarios que requieren formulación del Médico
+      Veterinario o Médico Veterinario Zootecnista con matrícula profesional
+      vigente.
+    </td>
+    <td>
+      <center>
+        <span id="idRegistroPrescripcionesCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRegistroPrescripcionesNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRegistroPrescripcionesNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7871-95367]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" style="background-color: #bfbfbf">
+      <center><strong>6.3. PLAGUICIDAS PECUARIOS</strong></center>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <center><b>Parámetro</b></center>
+    </td>
+    <td style="width: 8%">
+      <center><b>Cumple</b></center>
+    </td>
+    <td style="width: 11%">
+      <center><b>No cumple</b></center>
+    </td>
+    <td>
+      <center><b>N/A</b></center>
+    </td>
+    <td>
+      <center><b>Observaciones</b></center>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.3.1. </b></td>
+    <td class="td-class">
+      Los productos se almacenan por separado de acuerdo con su clasificación
+      toxicológica.
+    </td>
+    <td>
+      <center>
+        <span id="idSeparacionToxicologicaCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idSeparacionToxicologicaNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idSeparacionToxicologicaNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7872-95369]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.3.2. </b></td>
+    <td class="td-class">
+      Los residuos de posconsumo de plaguicidas se acopian en doble recipiente
+      que impidan derrames ocasionales.
+    </td>
+    <td>
+      <center>
+        <span id="idDobleRecipienteCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idDobleRecipienteNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idDobleRecipienteNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7872-95371]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" style="background-color: #bfbfbf">
+      <center><strong>6.4. MEDICAMENTOS DE CONTROL ESPECIAL</strong></center>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <center><b>Parámetro</b></center>
+    </td>
+    <td style="width: 8%">
+      <center><b>Cumple</b></center>
+    </td>
+    <td style="width: 11%">
+      <center><b>No cumple</b></center>
+    </td>
+    <td>
+      <center><b>N/A</b></center>
+    </td>
+    <td>
+      <center><b>Observaciones</b></center>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.4.1. </b></td>
+    <td class="td-class">
+      Tiene señalización alusiva al acceso restringido a personal no autorizado
+      al área de venta de insumos y medicamentos de control especial y a la
+      bodega.
+    </td>
+    <td>
+      <center>
+        <span id="idSeñalizacionAreaInsumosCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idSeñalizacionAreaInsumosNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idSeñalizacionAreaInsumosNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7873-95373]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.4.2. </b></td>
+    <td class="td-class">
+      Los medicamentos de control especial se encuentran bajo llave y acceso
+      restringido
+    </td>
+    <td>
+      <center>
+        <span id="idMedicamentosRestringidoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idMedicamentosRestringidoNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idMedicamentosRestringidoNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7873-95375]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.4.3. </b></td>
+    <td class="td-class">
+      Cuenta con la debida inscripción ante la Unidad Administrativa Especial
+      (UAE) - Fondo Nacional de Estupefacientes (FNE) o los Fondos Rotatorios de
+      Estupefacientes de las Secretarías de Salud Departamentales para la
+      comercialización de medicamentos de control especial y las autorizaciones
+      respectivas.
+    </td>
+    <td>
+      <center>
+        <span id="idInscripcionUAECumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idInscripcionUAENoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idInscripcionUAENA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7873-95377]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.4.4. </b></td>
+    <td class="td-class">
+      Conserva los formatos expedidos por el Consejo Profesional de Medicina
+      veterinaria y de zootecnia de Colombia - COMVEZCOL para el uso de
+      medicamentos de franja morada o de control especial.
+    </td>
+    <td>
+      <center>
+        <span id="idFormatosConcejoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idFormatosConcejoNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idFormatosConcejoNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7873-95379]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.4.5. </b></td>
+    <td class="td-class">
+      Cuenta con un procedimiento para el manejo de medicamentos de control
+      especial.
+    </td>
+    <td>
+      <center>
+        <span id="idControlMedicamentosCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idControlMedicamentosNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idControlMedicamentosNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7873-95381]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" style="background-color: #bfbfbf">
+      <center>
+        <strong
+          >6.5. BIOLÓGICOS O MEDICAMENTOS QUE REQUIEREN CADENA DE FRÍO</strong
+        >
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <center><b>Parámetro</b></center>
+    </td>
+    <td style="width: 8%">
+      <center><b>Cumple</b></center>
+    </td>
+    <td style="width: 11%">
+      <center><b>No cumple</b></center>
+    </td>
+    <td>
+      <center><b>N/A</b></center>
+    </td>
+    <td>
+      <center><b>Observaciones</b></center>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.5.1. </b></td>
+    <td class="td-class">
+      Cuenta con un cuarto frio o nevera exclusiva para la conservación de
+      biológicos o los medicamentos que así lo requieran.
+    </td>
+    <td>
+      <center>
+        <span id="idCuartoFrioCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idCuartoFrioNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idCuartoFrioNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7874-95383]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.5.2. </b></td>
+    <td class="td-class">
+      Cuenta con planta eléctrica en caso de interrupciones en la cadena de frío
+      ocasionada por cortes en el suministro de fluido eléctrico.
+    </td>
+    <td>
+      <center>
+        <span id="idPlantaElectricaCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idPlantaElectricaNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idPlantaElectricaNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7874-95385]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.5.3. </b></td>
+    <td class="td-class">
+      Cuenta con registros de temperatura del equipo de refrigeración y del
+      congelador.
+    </td>
+    <td>
+      <center>
+        <span id="idRegistrosTemperaturaCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRegistrosTemperaturaNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRegistrosTemperaturaNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7874-95387]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.5.4. </b></td>
+    <td class="td-class">
+      Cuenta con instrumentos adecuados para la medición de temperatura
+      (termómetros).
+    </td>
+    <td>
+      <center>
+        <span id="idInstrumentosMedicionCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idInstrumentosMedicionNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idInstrumentosMedicionNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7874-95389]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.5.5. </b></td>
+    <td class="td-class">
+      Cuenta con refrigerantes para suministrar al comprador para asegurar la
+      cadena de frio de los biológicos o los medicamentos que así lo requieran.
+    </td>
+    <td>
+      <center>
+        <span id="idRefrigerantesSuministrosCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRefrigerantesSuministrosNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRefrigerantesSuministrosNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7874-95391]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.5.6. </b></td>
+    <td class="td-class">
+      Cuenta con procedimiento escrito del mantenimiento de la cadena de frio
+      para biológicos o medicamentos que lo requieran.
+    </td>
+    <td>
+      <center>
+        <span id="idProcedimientoEscritoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idProcedimientoEscritoNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idProcedimientoEscritoNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7874-95393]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" style="background-color: #bfbfbf">
+      <center>
+        <strong>6.6. ALIMENTOS Y ALIMENTOS A GRANEL</strong>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <center><b>Parámetro</b></center>
+    </td>
+    <td style="width: 8%">
+      <center><b>Cumple</b></center>
+    </td>
+    <td style="width: 11%">
+      <center><b>No cumple</b></center>
+    </td>
+    <td>
+      <center><b>N/A</b></center>
+    </td>
+    <td>
+      <center><b>Observaciones</b></center>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.6.1. </b></td>
+    <td class="td-class">
+      Cuenta con la autorización del titular para la venta de alimentos a
+      granel.
+    </td>
+    <td>
+      <center>
+        <span id="idAutorizacionVentaAlimentosCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idAutorizacionVentaAlimentosNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idAutorizacionVentaAlimentosNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7875-95395]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.6.2. </b></td>
+    <td class="td-class">
+      Cuenta con los registros de los productos, incluyendo cantidad y número de
+      lote.
+    </td>
+    <td>
+      <center>
+        <span id="idRegistroProductosCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRegistroProductosNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRegistroProductosNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7875-95397]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.6.3. </b></td>
+    <td class="td-class">
+      Conserva el alimento en condiciones que garantizan los requisitos
+      microbiológicos exigidos por el ICA para cada producto.
+    </td>
+    <td>
+      <center>
+        <span id="idRequisitosMicrobilogicosCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRequisitosMicrobilogicosNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRequisitosMicrobilogicosNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7875-95399]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.6.4. </b></td>
+    <td class="td-class">
+      Cuenta con el registro de capacitación por parte del productor en el
+      manejo y almacenamiento de alimentos para perros y gatos.
+    </td>
+    <td>
+      <center>
+        <span id="idCapatcitacionAlimentosCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idCapatcitacionAlimentosNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idCapatcitacionAlimentosNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7875-95401]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.6.5. </b></td>
+    <td class="td-class">
+      Evita la comercialización de alimentos mezclados, con diferente registro
+      ICA.
+    </td>
+    <td>
+      <center>
+        <span id="idAlimentosMezcladosCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idAlimentosMezcladosNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idAlimentosMezcladosNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7875-95403]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.6.6. </b></td>
+    <td class="td-class">
+      Los recipientes están identificados con el rotulado del producto.
+    </td>
+    <td>
+      <center>
+        <span id="idRecipientesRotuladosCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRecipientesRotuladosNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRecipientesRotuladosNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7875-95405]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.6.7. </b></td>
+    <td class="td-class">
+      Los recipientes en los que se almacena el alimento son de fácil limpieza,
+      lavado y desinfección.
+    </td>
+    <td>
+      <center>
+        <span id="idRecipientesFacilLimpiezaCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRecipientesFacilLimpiezaNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRecipientesFacilLimpiezaNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7875-95407]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.6.8. </b></td>
+    <td class="td-class">
+      Las bolsas para empacar el alimento a granel son nuevas, y se encuentran
+      almacenadas en un lugar limpio y seco.
+    </td>
+    <td>
+      <center>
+        <span id="idBolsasNuevasCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idBolsasNuevasNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idBolsasNuevasNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7875-95409]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.6.9. </b></td>
+    <td class="td-class">
+      El dispensador del alimento se utiliza solo para este fin.
+    </td>
+    <td>
+      <center>
+        <span id="idDispensadorAlimentoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idDispensadorAlimentoNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idDispensadorAlimentoNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7875-95411]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" style="background-color: #bfbfbf">
+      <center>
+        <strong>6.7. MATERIAL GENÉTICO (SEMEN Y EMBRIONES)</strong>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <center><b>Parámetro</b></center>
+    </td>
+    <td style="width: 8%">
+      <center><b>Cumple</b></center>
+    </td>
+    <td style="width: 11%">
+      <center><b>No cumple</b></center>
+    </td>
+    <td>
+      <center><b>N/A</b></center>
+    </td>
+    <td>
+      <center><b>Observaciones</b></center>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.7.1. </b></td>
+    <td class="td-class">
+      Los termos de almacenamiento del semen y embriones se encuentran sobre
+      estibas.
+    </td>
+    <td>
+      <center>
+        <span id="idTermosSemenCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idTermosSemenNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idTermosSemenNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7876-95413]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.7.2. </b></td>
+    <td class="td-class">
+      Cuenta con los equipos de protección personal para el manejo de termos de
+      nitrógeno.
+    </td>
+    <td>
+      <center>
+        <span id="idEquiposProteccionCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idEquiposProteccionNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idEquiposProteccionNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7876-95415]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.7.3. </b></td>
+    <td class="td-class">
+      Cuenta con registros del nivel de nitrógeno líquido en los termos.
+    </td>
+    <td>
+      <center>
+        <span id="idRegistrosNivelNitrogenoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRegistrosNivelNitrogenoNOCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRegistrosNivelNitrogenoNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7876-95417]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.7.4. </b></td>
+    <td class="td-class">
+      El lugar de almacenamiento del semen y embriones cuenta con condiciones de
+      ventilación para garantizar la salida de los gases para el manejo de los
+      termos de nitrógeno líquido.
+    </td>
+    <td>
+      <center>
+        <span id="idSemenVentilacionCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idSemenVentilacionNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idSemenVentilacionNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7876-95419]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" style="background-color: #bfbfbf">
+      <center>
+        <strong>6.8. AVES COMERCIALES (PONEDORA Y POLLO DE ENGORDE)</strong>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <center><b>Parámetro</b></center>
+    </td>
+    <td style="width: 8%">
+      <center><b>Cumple</b></center>
+    </td>
+    <td style="width: 11%">
+      <center><b>No cumple</b></center>
+    </td>
+    <td>
+      <center><b>N/A</b></center>
+    </td>
+    <td>
+      <center><b>Observaciones</b></center>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.8.1. </b></td>
+    <td class="td-class">
+      Cuenta con el registro y archivo de los certificados de vacunación para
+      las aves comerciales de un (1) día, emitido por la incubadora de origen.
+    </td>
+    <td>
+      <center>
+        <span id="idRegistroVacunacionCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRegistroVacunacionNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRegistroVacunacionNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7877-95421]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.8.2. </b></td>
+    <td class="td-class">Comercializa una sola especie de aves.</td>
+    <td>
+      <center>
+        <span id="idUnaEspecieAvesCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idUnaEspecieAvesNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idUnaEspecieAvesNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7877-95423]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.8.3. </b></td>
+    <td class="td-class">
+      Las aves comerciales se encuentran en un área independiente y ventilada,
+      lejos de agentes tóxicos como los plaguicidas.
+    </td>
+    <td>
+      <center>
+        <span id="idAvesAreaIndependienteCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idAvesAreaIndependienteNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idAvesAreaIndependienteNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7877-95425]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.8.4. </b></td>
+    <td class="td-class">
+      Las aves comerciales provienen de incubadoras certificadas y registradas
+      ante el ICA.
+    </td>
+    <td>
+      <center>
+        <span id="idAvesProvienenIncubadorasCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idAvesProvienenIncubadorasNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idAvesProvienenIncubadorasNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7877-95427]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.8.5. </b></td>
+    <td class="td-class">
+      Las aves comerciales cuentan con suministro de agua y alimento, y se
+      aseguran las condiciones de bienestar animal.
+    </td>
+    <td>
+      <center>
+        <span id="idSuministroAguaAlimentoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idSuministroAguaAlimentoNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idSuministroAguaAlimentoNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7877-95429]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.8.6. </b></td>
+    <td class="td-class">
+      Las aves comerciales permanecen en el establecimiento máximo hasta los
+      quince (15) días de nacidas.
+    </td>
+    <td>
+      <center>
+        <span id="idMaximo15DiasCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idMaximo15DiasNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idMaximo15DiasNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7877-95431]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.8.7. </b></td>
+    <td class="td-class">
+      Cuenta con un protocolo de desinfección de locales y equipos, exclusivo
+      para aves
+    </td>
+    <td>
+      <center>
+        <span id="idProtocoloDesinfeccionCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idProtocoloDesinfeccionNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idProtocoloDesinfeccionNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7877-95433]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" style="background-color: #bfbfbf">
+      <center>
+        <strong>6.9. DOCUMENTACIÓN</strong>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <center><b>Parámetro</b></center>
+    </td>
+    <td style="width: 8%">
+      <center><b>Cumple</b></center>
+    </td>
+    <td style="width: 11%">
+      <center><b>No cumple</b></center>
+    </td>
+    <td style:"7%">
+      <center><b>N/A</b></center>
+    </td>
+    <td>
+      <center><b>Observaciones</b></center>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.9.1. </b></td>
+    <td class="td-class">
+      Cuenta con registro de inventarios de los productos, con número de lote,
+      titular y fecha de vencimiento.
+    </td>
+    <td>
+      <center>
+        <span id="idRegistroInventariosCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRegistroInventariosNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRegistroInventariosNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7878-95435]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.9.2. </b></td>
+    <td class="td-class">
+      Cuenta con registros de capacitación del personal y manual de
+      procedimientos en la comercialización y manejo de insumos pecuarios.
+    </td>
+    <td>
+      <center>
+        <span id="idRegistroCapacitacionCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRegistroCapacitacionNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idRegistroCapacitacionNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7878-95437]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.9.3. </b></td>
+    <td class="td-class">
+      Cuenta con registro de control de inventario (primeras entradas y
+      salidas).
+    </td>
+    <td>
+      <center>
+        <span id="idControlInventarioCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idControlInventarioNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idControlInventarioNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7878-95439]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.9.4. </b></td>
+    <td class="td-class">
+      Cuenta con procedimientos para el correcto almacenamiento, distribución y
+      comercialización de los insumos.
+    </td>
+    <td>
+      <center>
+        <span id="idProcedimientosAlmacenamientoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idProcedimientosAlmacenamientoNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idProcedimientosAlmacenamientoNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7878-95441]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.9.5. </b></td>
+    <td class="td-class">
+      Cuenta con registros y procedimiento de devoluciones y rechazos de
+      productos.
+    </td>
+    <td>
+      <center>
+        <span id="idProcedimientosDevolucionesCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idProcedimientosDevolucionesNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idProcedimientosDevolucionesNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7878-95443]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.9.6. </b></td>
+    <td class="td-class">
+      Cuenta con un protocolo para la recolección de derrames de sustancias
+      peligrosas y el respectivo kit de derrame.
+    </td>
+    <td>
+      <center>
+        <span id="idProtocoloRecoleccionCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idProtocoloRecoleccionNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idProtocoloRecoleccionNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7878-95445]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.9.7. </b></td>
+    <td class="td-class">
+      Cuenta con las fichas técnicas de seguridad de los productos de sustancias
+      tóxicas suministradas por el productor.
+    </td>
+    <td>
+      <center>
+        <span id="idFichasTEcnicasSeguridadCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idFichasTEcnicasSeguridadNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idFichasTEcnicasSeguridadNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7878-95447]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.9.8. </b></td>
+    <td class="td-class">
+      Cuenta con normas básicas de bioseguridad y tiene disponibles los
+      contactos de emergencia.
+    </td>
+    <td>
+      <center>
+        <span id="idNormasBioseguridadCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idNormasBioseguridadNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idNormasBioseguridadNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7878-95449]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.9.9. </b></td>
+    <td class="td-class">
+      Cuenta con registros de venta de los insumos pecuarios.
+    </td>
+    <td>
+      <center>
+        <span id="idInsumosPecuariosCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idInsumosPecuariosNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idInsumosPecuariosNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7878-95451]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.9.10. </b></td>
+    <td class="td-class">
+      Cuenta con un programa y registros de control de plagas.
+    </td>
+    <td>
+      <center>
+        <span id="idControlPlagasCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idControlPlagasNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idControlPlagasNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7878-95453]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-right: none; vertical-align: top"><b>6.9.11. </b></td>
+    <td class="td-class">
+      Cuenta con registro y reportes al ICA de los eventos adversos de los
+      productos comercializados en el establecimiento.
+    </td>
+    <td>
+      <center>
+        <span id="idEventosAdversosCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idEventosAdversosNoCumple">X</span>
+      </center>
+    </td>
+    <td>
+      <center>
+        <span id="idEventosAdversosNA">X</span>
+      </center>
+    </td>
+    <td>
+      <span class="h-card" style="color:blue">[[qID7878-95455]]</span>
+    </td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td colspan="6" style="background-color: #7f7f7f">
+      <center>
+        <strong>7. HALLAZGOS, OBSERVACIONES Y/O RECOMENDACIONES</strong>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" style="background-color: #bfbfbf">
+      <strong>7.1. HALLAZGOS</strong>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6">
+      <span class="h-card" style="color:blue">[[qID7879-95456]]</span>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" style="background-color: #bfbfbf">
+      <strong>7.2. OBSERVACIONES Y/O RECOMENDACIONES</strong>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6">
+      <span class="h-card" style="color:blue">[[qID7879-95457]]</span>
+    </td>
+  </tr>
+</table>
+<tr></tr>
+<table style="border-bottom: none; border-top: none">
+  <tr>
+    <td colspan="4" style="background-color: #7f7f7f">
+      <center><strong>8. ACCIÓN TOMADA Y ACTAS DILIGENCIADAS</strong></center>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding-left: 1%"><b>8.1.</b> Primera visita o IVC</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+    <td style="padding-left: 1%">N° de acta de toma de muestras</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding-left: 1%"><b>8.2.</b> Sellado de insumos</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+    <td style="padding-left: 1%">N° acta de sellado de insumos</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding-left: 1%"><b>8.3.</b> Levantamiento de sellos</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+    <td style="padding-left: 1%">N° acta de levantamiento de sellos</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding-left: 1%">
+      <b>8.4.</b> Supervisión a distribuidor de biológicos
+    </td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+    <td style="padding-left: 1%">N° acta de visita a distrib. de biológicos</td>
+    <td>
+      <center>
+        <span id="idPlanSanitarioSi">X</span>
+      </center>
+    </td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td colspan="2" style="background-color: #7f7f7f">
+      <center><strong>9. FECHA PROXIMA VISITA</strong></center>
+    </td>
+    <td colspan="2">
+      <center><span class="h-card" style="color: blue"></span></center>
+    </td>
+  </tr>
+</table>
+<tr></tr>
+<table style="border-top: none">
+  <tr>
+    <td colspan="4" style="background-color: #7f7f7f">
+      <center><strong>10. RESPONSABLES DE LA VISITA</strong></center>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="background-color: #bfbfbf">
+      <center>
+        <strong>10.1. RESPONSABLE(S) DEL ICA QUE REALIZA(N) LA VISITA</strong>
+      </center>
+    </td>
+    <td colspan="2" style="background-color: #bfbfbf">
+      <center>
+        <strong>10.2. PERSONA(S) QUE ATIENDE(N) LA VISITA</strong>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 10%">
+      <center><b>Firma</b></center>
+    </td>
+    <td>
+      <center>
+        <b><span class="h-card" style="color:blue">[[professionalSignature]]</span></b>
+      </center>
+    </td>
+    <td style="width: 10%">
+      <center><b>Firma</b></center>
+    </td>
+    <td>
+      <center>
+        <b>
+<img style="width: 200px !important;" src= "<span class="h-card" style="color:blue">[[signatureID7886-95634]]</span>"/>
+         </b>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <center><b>Nombre</b></center>
+    </td>
+    <td>
+      <center>
+        <b><span class="h-card" style="color:blue">[[professionalFullName]]</span></b>
+      </center>
+    </td>
+    <td>
+      <center><b>Nombre</b></center>
+    </td>
+    <td>
+      <center>
+        <b><span class="h-card" style="color:blue">[[producerFullName]]</span></b>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <center><b>Cédula</b></center>
+    </td>
+    <td>
+      <center>
+        <b> <span class="h-card" style="color:blue">[[professionalIdentification]]</span></b>
+      </center>
+    </td>
+    <td>
+      <center><b>Cédula</b></center>
+    </td>
+    <td>
+      <center>
+        <b><span class="h-card" style="color:blue">[[producerIdentification]]</span></b>
+      </center>
+    </td>
+  </tr>
+  <tr>
+    
+  </tr>
+  <tr>
+    <td colspan="4" style="text-align: center">
+      <b> Política de Tratamiento de Datos Personales: </b>
+      Manifiesto que he leído y acepto la política de privacidad y protección de
+      datos personales adoptada por el Instituto Colombiano Agropecuario - ICA y
+      publicada para consulta en la página web http://www.ica.gov.co. Para lo
+      cual al firmar la presente FORMA ICA autorizo a que el Instituto pueda
+      tratar mis datos personales conforme dicha política y en los términos en
+      que ello sea necesario.
+    </td>
+  </tr>
+</table>
